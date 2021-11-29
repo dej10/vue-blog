@@ -32,7 +32,7 @@ export default {
   },
 
   created() {
-    fetch("http://jsonplaceholder.typicode.com/posts/" + this.$route.params.id)
+    fetch("https://jsonplaceholder.typicode.com/posts/" + this.$route.params.id)
       .then((response) => response.json())
       .then((data) => (this.post = data));
   },
@@ -40,7 +40,7 @@ export default {
     showComments() {
       this.isActive = true;
       fetch(
-        "http://jsonplaceholder.typicode.com/posts/" +
+        "https://jsonplaceholder.typicode.com/posts/" +
           this.$route.params.id +
           "/comments"
       )

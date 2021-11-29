@@ -21,7 +21,7 @@ export default {
 
   mounted() {
     fetch(
-      "http://jsonplaceholder.typicode.com/posts/" +
+      "https://jsonplaceholder.typicode.com/posts/" +
         this.$route.params.id +
         "/comments"
     )
